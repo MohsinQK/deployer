@@ -1,11 +1,11 @@
-FROM php:7.4-alpine
+FROM php:8.0-alpine
 
 # Install production dependencies
 RUN apk add --no-cache \
     git \
     openssh-client \
     nodejs \
-    nodejs-npm \
+    npm \
     rsync 
 
 # Install Deployer
